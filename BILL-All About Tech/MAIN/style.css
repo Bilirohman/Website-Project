@@ -1,0 +1,476 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* FONT */
+@font-face {
+    font-family: 'Muli' ;
+    src: url(../Font/Muli/muli-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Copperplate' ;
+    src: url(../Font/Copperplate/copperplate-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Arvo' ;
+    src: url(../Font/Arvo/arvo-regular-webfont.woff) format('woff');
+}
+
+/* CONTAINER */
+body{
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-synthesis: 16px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: auto; width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    font-weight: bolder;
+    z-index: 3;
+}
+
+/* LOGO */
+.logo{
+    height: auto; width: 26%;
+    user-select: none;
+}
+.logo a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+.logo a img{
+    height: 65px;
+    margin-left: 40px;
+}
+
+.logo a p{
+    box-sizing: border-box;
+    line-height: 16px;
+    transition: 0.3s;
+}
+
+.logo a p span.head{
+    font-family: 'Arvo', Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.logo a p span.decs{
+    font-size: 0.8em;
+    transition: 0.3s ease;
+}
+
+/* LIST */
+.list{
+    height: auto; width: 45%;
+    background-color: white;
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: 0.3s;
+}
+
+.list ul li span{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 3.5px;
+    border-radius: 50px;
+    background-color: #4d4d4d;
+    z-index: 2;
+    filter: opacity(0);
+    transition: 0.3s;
+}
+
+/* BANNER */
+.Banner{
+    height: auto; width: 100%;
+    position: relative;
+}
+
+.Banner img{
+    width: 100%; height: 930px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: 0 -400px;
+    background-repeat: none;
+}
+
+.Banner .Bcontent{
+    width: 43%; height: auto;
+    border-radius: 20px;
+    font-family: 'Arvo';
+    font-size: 1.8em;
+    color: black;
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 700px; left: 80px;
+    z-index: 2;
+}
+
+.Banner .Bcontent a{
+    width: 40%; height: auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #4d4d4d;
+    position: absolute;
+    left: 10px; bottom: -50px;
+    text-decoration: none;
+    font-size: 0.6em;
+	transition: all .4s ease;
+}
+
+/* Content */
+.Content{
+    width: 90%; height: auto;
+    margin: 50px auto;
+}
+    /* Header */
+    .Hcontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Hcontent h1{
+        text-shadow: 5px 5px 8px #a6a6a6;
+    }
+
+    .Hcontent a{
+        width: 10%; height: auto;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #4d4d4d;
+        border-radius: 10px;
+        color: white;
+        transition: 0.4s ease;
+    }
+
+/* MAIN */
+.Content .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+    /* Article */
+    .main .Article .Aheader img{
+        width: 100%; height: auto;
+        display: inline-block;
+    }
+
+    .main .Article{
+        width: 28%; max-height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 15px 5px lightgray;
+        transition: 0.5s ease;
+    }
+
+    /* Main Article and Footer */
+    .main .Article .Amain, .main .Article .Afooter{
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .main .Article a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .main .Article .Amain{
+        transition: 0.5s;
+    }
+
+    .main .Article h3{
+        color: #737373;
+        font-size: 1em;
+    }
+
+    .Article .Amain h2{
+        width: 90%;
+        font-size: 1.3em;
+        margin: 20px 0;
+        transition: 0.3s ease;
+    }
+
+    .Article .Amain p{
+        font-size: 1em;
+    }
+
+    .Article .Afooter img{
+        width: 12%;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .Article .Afooter{
+        display: flex;
+        align-items: center;
+        width: 100%; height: 10%;
+        border-top: 2px solid #4d4d4d;
+    }
+
+/* FOOTER */
+.Footer{
+    width: 100%; height: auto; 
+    background-color: #666666;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.Footer h3{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Footer ul{
+    list-style: none;
+}
+
+.Footer ul li{
+    line-height: 25px;
+}
+
+.Footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.em;
+}
+
+    /* social */
+    .social .Flogo p ,head{
+        font-family: 'Arvo', Helvetica, sans-serif;
+        font-size: 1.8em;
+        user-select: none;
+    }
+    .social .Flogo p .decs{
+        font-size: 0.7em;
+    }
+
+    .social .socialmedia a img{
+        margin-top: 10px;
+        width: 35px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        user-select: none;
+    }
+
+/* HOVER EFFECT */
+.list ul li a:hover{
+    color: #999999;
+}
+
+.list ul li a:hover ~ span{
+    filter: opacity(1);
+    background-color: #999999;
+}
+
+.logo a:hover p span:last-child{
+    color: #a6a6a6;
+}
+
+.Banner .Bcontent a:hover{
+    filter: opacity(0.7);
+} 
+
+.Hcontent a:hover{
+    filter: opacity(0.7);
+}
+
+.Content .main .Article .Amain a:hover h2{
+    text-decoration: underline;
+}
+
+.Content .main .Article:hover{
+    transform: translate(0, -20px);
+}
+
+.main .Article .Afooter a:hover{
+    font-weight: bolder;
+}
+
+.Footer a:hover{
+    font-weight: bolder;
+    font-size: 1.05em;
+}
+
+.social .socialmedia a img:hover{
+    background-color: #737373;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:786px) {
+    body{
+        font-size: 14px;
+    }
+
+    .list{
+        width: 55%;
+    }
+
+    .logo a img{
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .Banner img{
+        margin-top: 55px;
+        height: 500px;
+    }
+
+    .Banner .Bcontent{
+        width: 55%;
+        top: 420px; left: 50px;
+        font-size: 1.2em;
+    }
+
+    .Banner .Bcontent a{
+        bottom: -30px;
+    }
+
+    .Hcontent a{
+        width: 20%;
+    }
+
+    .Content .main{
+        margin-top: 0;
+    }
+
+    .main .Article{
+        margin-top: 50px;
+        width: 48%;
+    }
+
+    .main .Article .Afooter img{
+        width: 15%;
+    }
+
+    .Footer{ 
+        padding: 30px;
+    }
+
+    .social .socialmedia a img{
+        width: 28px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    body{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .logo a img{
+        margin-left: 15px;
+    }
+
+    .logo a p{
+        display: none;
+    }
+
+    .list{
+        width: 70%;
+    }
+
+    .Banner img{
+        margin-top: 40px;
+        height: 280px;
+    }
+
+    .Banner .Bcontent{
+        width: 65%;
+        top: 210px; left: 25px;
+        font-size: 1.3em;
+    }
+
+    .Banner .Bcontent a{
+        bottom: -25px;
+    }
+
+    .Hcontent a{
+        width: 25%;
+    }
+
+    .Content .main{
+        margin-top: 0;
+    }
+
+    .main .Article{
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    .main .Article .Afooter img{
+        width: 10%;
+    }
+
+    .Footer{ 
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .Footer h3{
+        margin-top: 30px;
+    }
+
+    .social .socialmedia a img{
+        width: 24px;
+    }
+
+    .Footer .support ul, .overview ul{
+        flex-wrap: wrap;
+        display: flex;
+        width: 200px;
+        justify-content: space-around;
+    }
+
+}
+
