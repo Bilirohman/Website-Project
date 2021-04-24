@@ -1,0 +1,574 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MICRO CLEARFIX */
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* FONT */
+@font-face {
+    font-family: 'Copperplate' ;
+    src: url(./FONT/Copperplate/copperplate-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Muli' ;
+    src: url(./FONT/Muli/Muli.ttf) format('woff');
+}
+
+/* STYLE */
+body{
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: 16px/28px;
+    background-color: #d1d1e0;
+    background-image: url(./IMG/Background\ image.png);
+    color: #333;
+}
+
+div.topbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    background-color: gray;
+    border-bottom: 3px #333 solid;
+    z-index: 99;
+}
+
+div.container{
+    width: 960px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    position: relative;
+}
+
+/* Header */
+h1{
+    font-family: 'Copperplate', Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #9c4e16;
+    text-shadow: -1.8px 0 #592d0d;
+}
+
+div.header{
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
+div.header ul li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+div.header a{
+    text-decoration: none;
+    color: #595959;
+    padding: 3px;
+}
+
+div.header a:hover{
+    font-weight: bolder;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* HERO IMAGE INDEX*/
+div.heroimage-index{
+    height: 320px;
+    box-sizing: border-box;
+    background-image: url(./IMG/cafe.jpg);
+    background-size: cover;
+    background-position: 0px -250px;
+    border-top: 5px solid #595959;
+    border-bottom: 5px solid #595959;
+}
+
+/* CONTENT INDEX */
+    /* Main */
+    div.main{
+        width: 600px;
+        padding: 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    div.main h2{
+        font-family: 'Muli', Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 23px;
+        margin-bottom: 10px;
+        color: #9c4e16;
+    }
+
+    div.main p.penulis{
+        font-size: 12px;
+    }
+
+    div.main p.penulis a{
+        text-decoration: none;
+        color: #9c4e16;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    div.main p.penulis a:hover{
+        font-weight: bolder;
+    }
+
+    div.main p{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    
+    /* sidebar */
+    div.sidebar{
+        width: 300px;
+        float: right;
+        padding: 20px;
+    }
+
+    div.sidebar div.me{
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+    }
+
+    div.sidebar h3{
+        font-weight: bolder;
+        font-size: 20px;
+        margin: 0px 10px 10px 0px;
+        color: #595959;
+    }
+
+    div.sidebar img{
+        height: 70px;
+        float: left;
+        margin-right: 14px;
+        margin-bottom: 8px;
+        box-shadow: 0 3px 2px 1px #595959;
+    }
+
+    div.sidebar div.about div.me p{
+        font: 11px/18px 'Muli', Arial, sans-serif;
+    }
+
+    div.sidebar p span.nama{
+        font-weight: bolder;
+        font-size: 12px;
+    }
+
+    /* SOCIAL MEDIA */
+    div.sidebar div.about div.socialmedia{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    div.sidebar div.about div.socialmedia a{
+        border-bottom: 2px solid #333;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+    }
+    
+    div.socialmedia a.Instagram{
+        background-image: url(./IMG/sosmed/instagram\ logo.png);
+        background-size: cover;
+    }
+    div.socialmedia a.Instagram:hover{
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    div.socialmedia a.Twitter{
+        background-image: url(./IMG/sosmed/Twitter\ logo.png);
+        background-size: cover;
+    }
+    div.socialmedia a.Twitter:hover{
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    div.socialmedia a.GitHub{
+        background-image: url(./IMG/sosmed/github_PNG58.png);
+        background-size: cover;
+    }
+    div.socialmedia a.GitHub:hover{
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    /* MORE ARTICLE */
+    div.sidebar div.more{
+        border-bottom: 2px solid #333;
+    }
+
+    div.sidebar div.more h3{
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #333;
+    }
+
+    div.sidebar div.more div.list ul {
+        height: 460px;
+        overflow: auto;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    div.sidebar div.more div.list ul li{
+        margin-bottom: 20px;
+    }
+
+    div.sidebar div.more div.list a{
+        display: inline-block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #595959;
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    div.sidebar div.more div.list p{
+        font: 12px/18px 'Muli', Arial, sans-serif;
+    }
+
+    div.sidebar div.more div.list a:hover{
+        text-decoration: underline;
+        background-color: #e6e6e6;
+    }
+
+    div.sidebar div.more div.list p{
+        line-height: 13px;
+    }
+
+    div.sidebar div.more div.list img{
+        display: inline;
+        height: 50px;
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+
+/* HERO IMAGE PRODUCT*/
+div.heroimage-product{
+    width: 800px;
+    height: 320px;
+    margin: auto;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: url(./IMG/Product/Header\ NNcoffee.jpg);
+    background-position: 0 -400px;
+    border-top: 8px solid #333;
+    border-bottom: 8px solid #333;
+    border-left: 5px solid #7a7676;
+    border-right: 5px solid #7a7676;
+}
+
+div.container div.headerp, div.contentp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    /* CONTENT PRODUCT*/
+    div.contentph h2{
+        margin: 20px 20px;
+        color: #9c4e16;
+        font-weight: bolder;
+        font-size: 20px;
+        border-left: #9c4e16;
+    }
+
+    div.contentph div.hdecs, div.contentph div.cdecs{
+        margin: 20px 0;
+        width: 600px;
+    }
+
+    div.contentph div.hdecs p, div.contentph div.cdecs p{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+        /* HEADER PRODUCT */
+        div.contentph div.headerp ul{
+            width: 800px;
+            margin: 0 80px;
+            padding: 20px 0;
+            border-top: 3px solid #333;
+        }
+
+        div.contentph div.headerp ul li{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 132px;
+
+        }
+
+        div.contentph div.headerp ul li img,
+        div.contentph div.contentp ul li img{
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(0px 8px 5px #333);;
+            border-radius: 10px;
+        }
+
+        div.contentph div.headerp ul li a span{top: 563px;}
+        div.contentph div.headerp ul li a:hover span{
+            filter: opacity(0.7);
+            font-weight: bolder;
+        }
+
+        div.contentph div.headerp ul li a{
+            text-align: center;
+            line-height: 200px;
+            color: #333;
+        }
+
+        /* ALL PRODUCT */
+        div.contentph div.contentp ul{
+            width: 800px;
+            margin: auto;
+            padding: 20px 0;
+            border-top: 3px solid #333;
+            border-bottom: 3px solid #333;
+        }
+
+        div.contentph div.contentp ul li{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-top: 10px; margin-bottom: 30px;
+            margin-left: 50px;
+        }
+
+    /* SPAN ANIMATION */
+    div.contentph div.headerp ul li span,
+    div.contentph div.contentp ul li a span.baris1, 
+    div.contentph div.contentp ul li a span.baris2{
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: #e6e6e6;
+        position: absolute;
+        filter: opacity(0);
+        transition: all 0.4s ease-in-out;
+        border-radius: 10px;
+    }
+    div.contentph div.contentp ul li a span.baris1{top: 940.3px;}
+    div.contentph div.contentp ul li a span.baris2{top: 1180.3px;}
+
+    div.contentph div.contentp ul li a:hover span{
+        filter: opacity(0.7);
+        font-weight: bolder;
+    }
+    div.contentph div.contentp ul li a{
+        text-align: center;
+        line-height: 200px;
+        color: #333;
+    }
+
+    /* OVERLAY */
+    div.contentph div.overlay{
+        width: 0; height: 0;
+        overflow: hidden;
+        position: fixed;
+        background-color: rgba(89, 89, 89, 0);
+        top: 0; right: 0;
+        z-index: 99;
+        transition: 0.4s;
+        text-align: center;
+    }
+    div.contentph div.overlay:target{
+        width: auto; height: auto;
+        background-color: rgba(89, 89, 89, 0.6);
+        bottom: 0; left: 0;
+    }
+
+    div.contentph div.headerp ul li div.overlay img,     
+    div.contentph div.contentp ul li div.overlay img{
+        width: auto; height: auto;
+        max-height: 50%;
+        max-width: 50%;
+        margin-top: 12.5%;
+        filter: drop-shadow(5px 5px 5px #333);
+    }
+    div.contentph div.overlay:target img{
+        animation: zoom-fade 0.5s forwards;
+    }
+
+    /* CLOSE BUTTON */
+    div.contentph div.overlay a.close{
+        position: absolute;
+        top: 23.5%; right: 50%;
+        margin-right: -13%;
+        color: white;
+        text-decoration: none;
+        background-color: #333;
+        border: 1px solid white;
+        line-height: 20px;
+        padding: 6px 10px;
+        border-radius: 50%;
+        z-index: 100;
+        filter: opacity(0);
+    }
+    div.contentph div.overlay:target a.close{
+        animation: slidedown-fade 0.5s 0.5s forwards;
+    }
+
+    /* NAVIGATION */
+    div.contentph div.headerp ul li div.overlay a.next,     
+    div.contentph div.contentp ul li div.overlay a.next, 
+    ul li div.overlay a.prev,     
+    ul li div.overlay a.prev{
+        width: 80px; height: 80px;
+        background-image: url(./IMG/Navigation/chevron-right.svg);
+        position: absolute;
+        text-align: center;
+        background-size: cover;
+        line-height: 30px;
+        top: 43%;
+        margin-left: 20px;
+    }
+        /* TARGET ANIMATION */
+    div.contentph div.headerp ul li div.overlay:target a.next,     
+    div.contentph div.contentp ul li div.overlay:target a.next{
+        animation: slideleft-fade 1s 0.5s forwards;
+        filter: opacity(0);
+    }
+
+    div.contentph div.headerp ul li div.overlay a.prev,
+    div.contentph div.contentp ul li div.overlay a.prev{
+        background-image: url(./IMG/Navigation/chevron-left.svg);
+        margin-left: -85px;
+    }
+        /* TARGET ANIMATION */
+    div.contentph div.headerp ul li div.overlay:target a.prev,
+    div.contentph div.contentp ul li div.overlay:target a.prev{
+        animation: slideright-fade 1s 0.5s forwards;
+        filter: opacity(0);
+    }
+
+/* FLOOTER */
+div.footer{
+    background-color: #595959;
+    padding: 3px;
+}
+
+div.footer p.copyright{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* ANIMATION */
+@keyframes zoom-fade{
+    0% {
+        transform: scale(0);
+        filter: opacity(0);
+    }
+    100%{
+        transform: scale(1);
+        filter: opacity(1);
+    }
+}
+
+@keyframes slidedown-fade{
+    0%{
+        filter: opacity(0);
+        margin-top: -20px;
+    }
+    100%{
+        filter: opacity(1);
+        margin-top: 0;
+    }
+}
+
+@keyframes slideleft-fade{
+    0%{
+        filter: opacity(0);
+        margin-left: 40px;
+    }
+    100%{
+        filter: opacity(1);
+        margin-left: 0;
+    }
+}
+
+@keyframes slideright-fade{
+    0%{
+        filter: opacity(0);
+        margin-left: -150px;
+    }
+    100%{
+        filter: opacity(1);
+        margin-left: -85px;
+    }
+}
