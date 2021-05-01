@@ -135,7 +135,16 @@ body{
     background-color: black;
     border-radius: 5px;
     transition: 0.4s;
+}
+
+.Header .menu-toggle{
+    height: 20px;
     margin-right: 10px;
+    padding: 5px;
+}
+
+.Header .menu-toggle:active{
+    background-color: #a6a6a6;
 }
 
 /* MENU TOGGLE ANIMATION */
